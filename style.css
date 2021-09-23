@@ -1,4 +1,4 @@
-:root {
+ :root {
   --blue: #1e90ff;
   --blue2: #93d5ff;
   --white: lightgrey;
@@ -139,3 +139,5 @@ border: 2px solid var(--bg);
 
 
 }
+
+
