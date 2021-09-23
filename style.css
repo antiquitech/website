@@ -1,0 +1,141 @@
+:root {
+  --blue: #1e90ff;
+  --blue2: #93d5ff;
+  --white: lightgrey;
+  --grey: #252426;
+  --grey2: #5c5764;
+  --red: #ef2828;
+  --glow: #252426;
+  --bg: rgb(28, 28, 28);
+  --font1: 'Arial';
+  --font2: 'Verdana';
+}
+
+/* The switch - the box around the slider */
+.switch {
+
+  border-radius: 2px;
+  margin-top: 5px;
+  position: relative;
+  display: inline-block;
+  width: 63px;
+  height: 35px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+
+}
+
+/* The slider */
+.slider {
+border-radius: 2px;
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color:  var(--grey2); 
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+border-radius: 2px;
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: var(--white);
+  -webkit-transition: .4s;
+  transition: .4s;
+
+}
+
+input:checked + .slider {
+  background-color: var(--blue);
+
+
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+  background-color: var(--blue2);
+}
+
+.button1 {
+font-weight: bold;
+font-family: var(--font1); 
+border-radius: 2px;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  display: inline-block;
+  cursor: pointer;
+  padding: 5px 5px;
+  font-size: 75%;
+  background-color: var(--grey2); 
+  color: var(--bg); 
+  border: 5px solid var(--grey2); 
+ 
+} 
+
+.active, .button1:hover {
+  background-color: var(--bg);
+  color: var(--grey2); 
+ 
+}
+
+
+.row2 {
+  margin: 0px 0px;
+}
+
+/* Add padding BETWEEN each column */
+.row2,
+.row2 > .column2 {
+  padding: 5px;
+}
+
+/* Create four equal columns that floats next to each other */
+.column2 {
+  float: left;
+  width: 33%;
+
+  
+}
+
+/* Clear floats after rows */ 
+.row2:after {
+  content: "";
+  display: table;
+  clear: both;
+  padding: 25px;
+}
+
+/* Content */
+
+.content2 {
+
+  padding: 10px;
+border: 2px solid var(--bg); 
+}
+
+.content2:hover {
+border: 2px solid var(--bg); 
+  padding: 10px;
+
+
+}
