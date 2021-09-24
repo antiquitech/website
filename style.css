@@ -1,13 +1,13 @@
  :root {
+  --bg: #35363A;
+  --color1: lightgrey;
+  --color2: #5c5764;
   --blue: #1e90ff;
   --blue2: #93d5ff;
-  --white: lightgrey;
   --grey: #252426;
-  --grey2: #5c5764;
   --red: #ef2828;
   --glow: #252426;
-  --bg: rgb(28, 28, 28);
-  --font1: 'Arial';
+  --font1: 'Monospace';
   --font2: 'Verdana';
 }
 
@@ -39,7 +39,7 @@ border-radius: 2px;
   left: 0;
   right: 0;
   bottom: 0;
-  background-color:  var(--grey2); 
+  background-color:  var(--color2); 
   -webkit-transition: .4s;
   transition: .4s;
 }
@@ -52,7 +52,7 @@ border-radius: 2px;
   width: 26px;
   left: 4px;
   bottom: 4px;
-  background-color: var(--white);
+  background-color: var(--color1);
   -webkit-transition: .4s;
   transition: .4s;
 
@@ -76,25 +76,26 @@ input:checked + .slider:before {
   background-color: var(--blue2);
 }
 
-.button1 {
-font-weight: bold;
-font-family: var(--font1); 
-border-radius: 2px;
+.button1 { 
+  text-decoration: none;
+  font-weight: bold;
+  font-family: var(--font1); 
+  border-radius: 2px;
   margin-top: 2%;
   margin-bottom: 2%;
   display: inline-block;
   cursor: pointer;
-  padding: 5px 5px;
-  font-size: 75%;
-  background-color: var(--grey2); 
-  color: var(--bg); 
-  border: 5px solid var(--grey2); 
+  padding: 16px 32px;
+  font-size: 150%;
+  background-color: var(--bg); 
+  color: var(--color1); 
+  border: 5px solid var(--color1); 
  
 } 
 
 .active, .button1:hover {
-  background-color: var(--bg);
-  color: var(--grey2); 
+  background-color: var(--color1);
+  color: var(--color2); 
  
 }
 
